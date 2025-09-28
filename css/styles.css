@@ -80,10 +80,20 @@ select {
     padding: 1rem 0;
 }
 
-.logo h1 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: 700;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    transform: scale(1.02);
 }
 
 .nav-links {
@@ -473,8 +483,8 @@ section {
 }
 
 @media (max-width: 480px) {
-    .logo h1 {
-        font-size: 1.25rem;
+    .logo-img {
+        height: 45px;
     }
 
     .nav-links {
