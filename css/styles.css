@@ -67,17 +67,18 @@ select {
 /* Header Styles */
 .header {
     background: white;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-medium);
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .logo {
@@ -86,10 +87,11 @@ select {
 }
 
 .logo-img {
-    height: 60px;
+    height: 80px;
     width: auto;
     max-width: 100%;
     transition: var(--transition);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .logo-img:hover {
@@ -484,7 +486,11 @@ section {
 
 @media (max-width: 480px) {
     .logo-img {
-        height: 45px;
+        height: 60px;
+    }
+
+    .nav {
+        padding: 1.25rem 0;
     }
 
     .nav-links {
