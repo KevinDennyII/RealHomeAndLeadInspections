@@ -461,6 +461,29 @@ section {
     padding: 2rem 0;
 }
 
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.attribution {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.attribution a {
+    color: var(--primary-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.attribution a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
