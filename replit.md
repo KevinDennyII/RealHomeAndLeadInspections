@@ -1,6 +1,6 @@
 # Overview
 
-This is a professional one-page website for Real Home and Lead Inspections, LLC, a Baltimore-based home inspection service. The site is built with vanilla HTML, CSS, and JavaScript following modern web development practices. It features a responsive design with sections for services, scheduling (via Acuity integration), and contact information. The site is designed to be deployed on Netlify and requires integration with Acuity Scheduling for live booking functionality.
+This is a professional one-page website for Real Home and Lead Inspections, LLC, a Baltimore-based home inspection service. The site is built with vanilla HTML, CSS, and JavaScript following modern web development practices. It features a responsive design with sections for services, live Acuity Scheduling integration, and contact information. The site is ready for deployment on Netlify with zero build process required.
 
 # User Preferences
 
@@ -32,10 +32,10 @@ Preferred communication style: Simple, everyday language.
 # External Dependencies
 
 ## Third-Party Services
-- **Acuity Scheduling**: Primary booking system integration (requires manual setup by client)
+- **Acuity Scheduling**: Fully integrated booking system (Owner ID: 15707908)
   - Embedded iframe widget for appointment scheduling
-  - Customizable to match brand colors and styling
-  - Handles pricing display and email confirmations
+  - Handles pricing display and email confirmations automatically
+  - Allows online payment processing
 
 ## Fonts and Assets
 - **Google Fonts**: Inter font family loaded via Google Fonts CDN with preconnect optimization
@@ -49,6 +49,6 @@ Preferred communication style: Simple, everyday language.
 - **http-server**: Node.js package for local development server (npm dependency)
 - **No Build Tools**: Direct file serving without webpack, gulp, or similar build systems
 
-## Integration Requirements
-- **Manual Acuity Setup**: Client must obtain embed code from their Acuity Scheduling account
-- **Demo Widget Replacement**: Current implementation includes placeholder widget that needs replacement with live Acuity embed code
+## Completed Integrations
+- **Acuity Scheduling**: Live booking system fully integrated and operational
+- **OhhDenny Services Attribution**: Professional footer attribution with link to ohhdennyservices.com
