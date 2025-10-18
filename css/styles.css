@@ -337,50 +337,59 @@ section {
 }
 
 .contact-content {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: var(--background-white);
+    padding: 2.5rem 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
     text-align: center;
 }
 
-.contact-info h3 {
+.contact-header h3 {
     font-size: 1.75rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-dark);
 }
 
-.contact-info .tagline {
+.contact-header .tagline {
     font-size: 1.1rem;
     color: var(--accent-green);
     font-weight: 600;
     margin-bottom: 2rem;
+    display: block;
 }
 
 .contact-details {
     display: grid;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+    gap: 1.25rem;
 }
 
 .contact-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     flex-wrap: wrap;
 }
 
 .contact-label {
     font-weight: 600;
     color: var(--text-dark);
-    min-width: 100px;
 }
 
 .phone-link {
     color: var(--primary-blue);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: var(--transition);
 }
 
@@ -390,26 +399,25 @@ section {
 }
 
 .contact-note {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-medium);
     font-style: italic;
 }
 
-.license-info {
+.license-card {
     background: var(--background-white);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
     border: 1px solid var(--border-color);
-    margin-top: 2rem;
+    text-align: center;
 }
 
-.license-info h4 {
+.license-card h4 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .license-list {
@@ -423,7 +431,7 @@ section {
 .license-list li {
     color: var(--text-dark);
     font-size: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
