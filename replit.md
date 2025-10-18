@@ -1,6 +1,19 @@
 # Overview
 
-This is a professional one-page website for Real Home and Lead Inspections, LLC, a Baltimore-based home inspection service. The site is built with vanilla HTML, CSS, and JavaScript following modern web development practices. It features a responsive design with sections for services, live Acuity Scheduling integration, and contact information. The site is ready for deployment on Netlify with zero build process required.
+This is a professional one-page website for Real Home and Lead Inspections, LLC, a Baltimore-based home inspection service. The site is built with vanilla HTML, CSS, and JavaScript following modern web development practices. It features a responsive design with sections for services, live Acuity Scheduling integration, and detailed contact information including license credentials. The site is deployed on Netlify via GitHub auto-deployment with zero build process required.
+
+# Recent Changes (October 18, 2025)
+
+- Added comprehensive contact information section with:
+  - Phone number (443-266-3761) with clickable tel: link
+  - "Fully licensed & insured" tagline
+  - License credentials display:
+    - MD Home Inspector License #35492
+    - MHIC #145534
+    - MDE Accredited Visual Lead Inspector 100132
+  - Service area information
+- Enhanced contact section styling with license info card
+- Client instructed to customize Acuity Scheduling widget colors to match site design
 
 # User Preferences
 
