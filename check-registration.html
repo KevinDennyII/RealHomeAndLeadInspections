@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Your Baltimore City or County Rental Registration &amp; License Status | Rayville</title>
+  <meta name="description" content="Check whether your Baltimore City or Baltimore County rental property already has an MDE lead registration or a valid rental license before scheduling an inspection.">
+  <link rel="icon" href="images/rayville-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <img src="images/rayville-logo.png" alt="Rayville Real Home and Lead Inspections" class="brand-logo">
+    </a>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="burger" aria-label="Menu"><span></span><span></span><span></span></label>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="first-time-investors.html">New to Renting</a>
+      <a href="ongoing-compliance.html">Ongoing Compliance</a>
+      <a href="check-registration.html" class="active">Check Your Registration</a>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-green btn-sm" href="#contact">Schedule Inspection</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-check">
+    <div class="wrap content">
+      <h1>Is your property already registered?</h1>
+      <p class="lede">Before you schedule anything, check whether your Baltimore City or Baltimore County property already has a current MDE lead registration or a valid rental license.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="lookup-grid">
+        <div class="lookup-card">
+          <div class="badge" aria-hidden="true">🔍</div>
+          <h3>MDE Lead Registration Lookup</h3>
+          <p>Check whether your property is currently registered with the Maryland Department of the Environment's lead rental registry, and whether it's up to date. Applies to both Baltimore City and Baltimore County properties.</p>
+          <a class="btn btn-navy-outline" href="#" aria-disabled="true">Check MDE Registration</a>
+          <span class="pending-note">Link coming soon</span>
+        </div>
+        <div class="lookup-card">
+          <div class="badge" aria-hidden="true">🔍</div>
+          <h3>Baltimore City Rental License Lookup</h3>
+          <p>Check whether your property has a current rental license on file with Baltimore City's Department of Housing &amp; Community Development.</p>
+          <a class="btn btn-navy-outline" href="#" aria-disabled="true">Check Rental License Status</a>
+          <span class="pending-note">Link coming soon</span>
+        </div>
+        <div class="lookup-card">
+          <div class="badge" aria-hidden="true">🔍</div>
+          <h3>Baltimore County Rental License Lookup</h3>
+          <p>Check whether your property has a current rental license on file with Baltimore County, which runs its own licensing process separate from the City.</p>
+          <a class="btn btn-navy-outline" href="#" aria-disabled="true">Check Rental License Status</a>
+          <span class="pending-note">Link coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explainer">
+    <div class="wrap">
+      <h2>Not sure what you're looking at?</h2>
+      <p class="measure">Lookup results can be confusing on their own — an expired registration, a name that doesn't match your deed, or a status you don't recognize. If you're not sure what your results mean, send them to us and we'll help you interpret them and figure out the next step.</p>
+      <a class="btn btn-navy-outline" href="#contact">Ask Us About Your Results</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Get your compliance plan</h2>
+      <p class="measure lede-light">Tell us about your property and where it stands. We'll follow up with what it actually needs.</p>
+      <div class="grid">
+        <div class="contact-info">
+          <p>Prefer to talk it through? Call or email us directly.</p>
+          <div class="contact-detail">
+            <span class="label">PHONE</span>
+            <a class="value" href="tel:443-266-3761">443-266-3761</a>
+          </div>
+          <div class="contact-detail">
+            <span class="label">EMAIL</span>
+            <a class="value" href="mailto:info@realhomeandlead.com">info@realhomeandlead.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="label">SERVICE AREA</span>
+            <span class="value">Baltimore City &amp; Baltimore County</span>
+          </div>
+        </div>
+        <form name="property-details" method="POST" netlify netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="property-details">
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field"></label>
+          </p>
+          <div class="row2">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="address">Property address</label>
+            <input id="address" name="address" type="text" autocomplete="street-address">
+          </div>
+          <div>
+            <label for="stage">Where are you in the process?</label>
+            <select id="stage" name="stage">
+              <option>Just closed on the property</option>
+              <option>Preparing for a tenant</option>
+              <option>Preparing to renew a license</option>
+              <option>Failed an inspection, need next steps</option>
+              <option>Managing multiple properties</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+            <label for="best-time">Best time to contact you</label>
+            <select id="best-time" name="best_time">
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+              <option>Anytime</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-green">Send my property details</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="with-border">
+  <div class="wrap">
+    <div>
+      <p>© 2026 Rayville — Real Home &amp; Lead Inspections, LLC.</p>
+      <p style="margin-top:6px;">Made by <a href="https://ohhdennyservices.com" target="_blank" rel="noopener">OhhDenny Services, LLC</a></p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="first-time-investors.html">New to Renting</a>
+      <a href="ongoing-compliance.html">Ongoing Compliance</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
