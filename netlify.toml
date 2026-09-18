@@ -2,6 +2,11 @@
   publish = "."
   command = ""
 
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
